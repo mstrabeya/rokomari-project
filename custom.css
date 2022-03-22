@@ -41,8 +41,9 @@ header{
 .header-search input{
 	padding: 10px 500px 10px 5px;
 	font-size: 17px;
-	border-radius: 8px;
+	border-radius: 3px;
 	border: 1px solid rgba(0,0,0,0.2);
+	border-bottom: 2px solid #FF9900;
 }
 .button{
 	display: inline-flex;
@@ -125,6 +126,106 @@ header{
 	color: #03A4E3;
 }
 /*--menu end--*/
+/*--Slider start--*/
+.banner-slider{
+	width: 100%;
+	height: 300px;
+	position: relative;
+}
+.banner-slider1,.banner-slider2,.banner-slider3,.banner-slider4,{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+.Sliderimg img{
+	display: block;
+	width: 100%;
+	height: 300px;
+	position: absolute;
+
+}
+.banner-slider1{
+	animation: slide1 12s linear infinite;
+}
+@keyframes slide1{
+	0%{
+		visibility: visible;
+	}
+	25%{
+		visibility: hidden;
+	}
+	50%{
+		visibility: hidden;
+	}
+	75%{
+		visibility: hidden;
+	}
+	100%{
+		visibility: visible;
+	}
+}
+.banner-slider2{
+	animation: slide2 12s linear infinite;
+}
+@keyframes slide2{
+	0%{
+		visibility: hidden;
+	}
+	25%{
+		visibility: hidden;
+	}
+	50%{
+		visibility: visible;
+	}
+	75%{
+		visibility: hidden;
+	}
+	100%{
+		visibility: hidden;
+	}
+}
+.banner-slider3{
+	animation: slide3 12s linear infinite;
+}
+@keyframes slide3{
+	0%{
+		visibility: hidden;
+	}
+	25%{
+		visibility: hidden;
+	}
+	50%{
+		visibility: hidden;
+	}
+	75%{
+		visibility: visible;
+	}
+	100%{
+		visibility: hidden;
+	}
+}
+.banner-slider4{
+	animation: slide4 12s linear infinite;
+}
+@keyframes slide4{
+	0%{
+		visibility: hidden;
+	}
+	25%{
+		visibility: hidden;
+	}
+	50%{
+		visibility: hidden;
+	}
+	75%{
+		visibility: hidden;
+	}
+	100%{
+		visibility: visible;
+	}
+}
+/*--Slider end--*/
 /*-- article-box start--*/
 .article-box{
 	box-shadow: 0 5px 2px 2px rgba(10,0,0,0.1);
